@@ -1,0 +1,39 @@
+/* 
+  .leftdiv
+    {
+    float: left;
+    }
+    .middlediv
+    {
+    float: left;
+    }
+    .rightdiv
+    {
+    float: right;    
+    }
+    div{
+    padding : 1%;
+    color: black;
+    width: 45%;
+    border: solid black;
+    } */
+
+    .main-content {
+        position: relative;
+        width: 40%;
+        
+    }
+    .sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 40%;
+        overflow-y: scroll;        
+        
+    }
+
+    .topnav-right {
+      float: right;
+    }
+    

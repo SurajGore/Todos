@@ -1,0 +1,33 @@
+<div class="main-content">
+    
+    <label><b>Todos</b></label>
+    <div class="topnav-right">
+        <input type="text" #Ccomponent (keyup)="onChange(Ccomponent.value)" placeholder="Search...">
+    </div>
+    <br/>
+    <br/>
+        <table id='tab' border="1">
+            <thead>
+            <tr>
+                <th scope="col">ToDo ID</th>
+                <th scope="col">Title</th>
+                <th scope="col">Status</th>
+                <th scope="col">Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let R of alltodolist">
+                <td>{{R.id}}</td>
+                <td>{{R.title}}</td>
+                <td>{{R.completed}}</td>
+                <td><button (click)="Viewuserdetail(R)">View User</button></td>
+            </tr>
+            </tbody>
+        </table> 
+</div>
+
+<div class="sidebar">
+    
+        <app-todouserdetails [UserData]="UserData"></app-todouserdetails>
+    
+</div>
